@@ -12,6 +12,9 @@
   <%# Added by plugin 'user_auth' on 2011-08-30 16:00 -%>
   <% if logged_in? -%>
     <%= link_to t("helpers.link.user.change_password"), change_password_user_path(current_user) %>
+    <% if current_user.administrator? -%>
+      <%= link_to t("helpers.link.user.index"), users_path %>
+    <% end -%>
     <%= link_to t("helpers.link.logout"), logout_path %>
   <% end -%>
 
