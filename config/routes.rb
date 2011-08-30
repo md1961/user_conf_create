@@ -11,9 +11,19 @@ UserConfCreate::Application.routes.draw do
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
+  match '/login'  => "sessions#new"    , :as => :login
+  match '/logout' => "sessions#destroy", :as => :logout
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
+  resource :session, :only => [:new, :create, :destroy]
+
+  resources :users, :except => [:show] do
+    member do
+      get 'change_password', 'reset_password'
+      put 'update_password'
+    end
+  end
 
   # Sample resource route with options:
   #   resources :products do

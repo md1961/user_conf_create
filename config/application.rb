@@ -29,6 +29,8 @@ module UserConfCreate
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+    config.i18n.default_locale = :ja
+    config.i18n.load_path += Dir[Rails.root.join('vendor/plugins/user_auth/locales/**/*.{rb,yml}')]
 
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)

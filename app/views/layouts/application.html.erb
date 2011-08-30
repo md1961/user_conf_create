@@ -8,6 +8,17 @@
 </head>
 <body>
 
+
+  <%# Added by plugin 'user_auth' on 2011-08-30 16:00 -%>
+  <% if logged_in? -%>
+    <%= link_to t("helpers.link.user.change_password"), change_password_user_path(current_user) %>
+    <%= link_to t("helpers.link.logout"), logout_path %>
+  <% end -%>
+
+  <%# Added by plugin 'user_auth' on 2011-08-30 16:00 -%>
+  <%= content_tag :p, notice, :class => "notice" if notice.present? %>
+  <%= content_tag :p, alert , :class => "alert"  if alert .present? %>
+
 <%= yield %>
 
 </body>
