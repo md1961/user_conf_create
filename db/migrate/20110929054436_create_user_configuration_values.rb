@@ -7,6 +7,8 @@ class CreateUserConfigurationValues < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    add_index :user_configuration_values, [:user_id, :user_configuration_name_id], :unique => true
   end
 
   def self.down

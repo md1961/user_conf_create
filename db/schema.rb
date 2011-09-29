@@ -29,6 +29,8 @@ ActiveRecord::Schema.define(:version => 20110929054436) do
     t.datetime "updated_at"
   end
 
+  add_index "user_configuration_names", ["name"], :name => "index_user_configuration_names_on_name", :unique => true
+
   create_table "user_configuration_values", :force => true do |t|
     t.integer  "user_id",                    :null => false
     t.integer  "user_configuration_name_id", :null => false
