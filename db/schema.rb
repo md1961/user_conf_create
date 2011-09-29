@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110929053400) do
+ActiveRecord::Schema.define(:version => 20110929054436) do
 
   create_table "sessions", :force => true do |t|
     t.string   "session_id", :null => false
@@ -25,6 +25,14 @@ ActiveRecord::Schema.define(:version => 20110929053400) do
   create_table "user_configuration_names", :force => true do |t|
     t.string   "name",                             :null => false
     t.string   "type",       :default => "String", :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "user_configuration_values", :force => true do |t|
+    t.integer  "user_id",                    :null => false
+    t.integer  "user_configuration_name_id", :null => false
+    t.string   "value"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
