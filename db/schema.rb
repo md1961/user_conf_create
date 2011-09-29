@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20110929054436) do
 
   create_table "user_configuration_names", :force => true do |t|
     t.string   "name",                             :null => false
-    t.string   "type",       :default => "String", :null => false
+    t.string   "clazz",      :default => "String", :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
