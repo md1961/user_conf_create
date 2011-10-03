@@ -1,0 +1,17 @@
+
+<table class="table_base">
+  <th />
+  <% @configuration_names.each do |name| -%>
+    <th><%= name %></td>
+  <% end -%>
+
+  <% @configurations.each do |configuration| -%>
+    <tr>
+      <td><%= configuration.user.name %></td>
+      <% @configuration_names.each do |name| -%>
+        <td><%= configuration.send(:"#{name}") %></td>
+      <% end -%>
+    </tr>
+  <% end -%>
+</table>
+
