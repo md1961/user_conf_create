@@ -25,6 +25,8 @@ UserConfCreate::Application.routes.draw do
     end
   end
 
+  resources :user_configurations
+
   # Sample resource route with options:
   #   resources :products do
   #     member do
