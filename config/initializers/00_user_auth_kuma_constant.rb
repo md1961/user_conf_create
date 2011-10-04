@@ -1,6 +1,6 @@
 module UserAuthKuma
   module Constant
-    SESSION_TIMEOUT_IN_MIN =  5
+    SESSION_TIMEOUT_IN_MIN = 60
 
     MIN_LENGTH_OF_NAME     =  5
     MAX_LENGTH_OF_NAME     = 50

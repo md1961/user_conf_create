@@ -1,0 +1,185 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  /* font-family: verdana, arial, helvetica, sans-serif; */
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+.notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* User-defined styles */
+
+#application_title a, #application_title {
+  font-size: xx-large;
+  font-weight: bolder;
+  font-style: italic;
+  text-decoration: none;
+}
+
+body.development {
+  background-color: pink;
+}
+
+.table_base {
+  border: 2px black solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table_base th {
+  font-weight: normal;
+  color: white;
+  background-color: #7F7F7F;
+  padding: 0px 4px 0px;
+  border: 1px black solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table_base td {
+  padding: 0px 4px 0px;
+  border: 1px black solid;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table_row0 {
+  background-color: #FFFFFF;
+}
+
+.table_row1 {
+  background-color: #CFCFCF;
+}
+
+#main_tab {
+  font-size: large;
+  font-weight: bold;
+}
+
+#main_tab a {
+  background-color: lightgrey;
+}
+
+#links_in_top {
+  font-size: x-large;
+}
+
+#links_in_top li {
+  margin-bottom: 20px;
+}
+
+#day_index th {
+  width: 20px;
+}
+
+#day_index th a {
+  color: white;
+  text-decoration: none;
+}
+
+.date_cursor, th.date_cursor, #day_index th.date_cursor a {
+  color: black;
+  background-color: cyan;
+}
+
+.weekend, th.weekend, #day_index th.weekend a {
+  color: black;
+  background-color: pink;
+}
+
+.maintainable_on_maintenance {
+  color: white;
+  background-color: red;
+}
+
+.on_maintenance, .on_maintenance a {
+  color: white;
+  background-color: red;
+  text-align: center;
+}
+
+.forced_activation {
+  background-color: yellow;
+}
+
+#table_schedules {
+  background-color: white;
+}
+
+#table_schedules .set_start {
+  background-color: limegreen;
+}
+
+#table_schedules .schedule {
+  text-align: center;
+}
+
+#table_schedules td a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.current_link {
+  font-size: large;
+  font-weight: bold;
+}
+
+.copyright {
+  font-size: xx-small;
+}
+
+
+.alerting, .alerting a {
+  color: yellow;
+  background-color: red;
+  font-weight: bold;
+}
+

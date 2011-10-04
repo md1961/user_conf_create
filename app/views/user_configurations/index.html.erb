@@ -7,7 +7,8 @@
 
   <% @configurations.each do |configuration| -%>
     <tr>
-      <td><%= configuration.user.name %></td>
+      <td><%= link_to configuration.user.name,
+                      new_user_configuration_path(:user_id => configuration.user_id) %></td>
       <% @configuration_names.each do |name| -%>
         <td><%= configuration.send(:"#{name}") %></td>
       <% end -%>

@@ -1,0 +1,24 @@
+
+<%= form_for(@configuration) do |f| %>
+  <%= error_messages_for(@configuration) %>
+
+  <%= f.hidden_field :user_id, %>
+
+  <div class="field">
+    <%= f.label 'Type' + ':' %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label 'Case' + ':' %><br />
+    <%= f.text_field :case %>
+  </div>
+  <div class="field">
+    <%= f.label 'uses_links' + ':' %><br />
+    <%= f.text_field :uses_links %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
